@@ -15,9 +15,7 @@ import optparse
 import sys
 
 from beanbag import BeanBagException
-from pdc_client import PDCClient
-
-__version__ = '0.1'
+from pdc_client import PDCClient, __version__
 
 
 def debug_request(func):

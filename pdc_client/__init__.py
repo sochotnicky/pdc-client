@@ -15,6 +15,8 @@ import requests_kerberos
 import warnings
 from os.path import expanduser, isfile
 
+__version__ = '0.1'
+
 from pdc_client import monkey_patch
 
 monkey_patch.monkey_patch_kerberos()
