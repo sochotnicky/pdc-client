@@ -4,17 +4,10 @@ Setup script
 """
 import os
 import sys
-MAIN_DIR = os.path.dirname(os.path.realpath(sys.argv[0]))
-sys.path.insert(0, MAIN_DIR)
 
 from setuptools import find_packages, setup
-# this won't work because we'd import __init__.py and fail on import beanbag or
-# other dependency. There are multiple ways to solve it, but leave it for
-# later...
-# from pdc_client.version import __version__
 
-# TODO this is duplicated in pdc_client/version.py
-__version__='0.1.8'
+__version__='0.1.9'
 
 setup(
     name = 'pdc-client',
